@@ -85,7 +85,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli\src\zopfli</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -101,7 +101,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli\src\zopfli</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -119,7 +119,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli\src\zopfli</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -139,7 +139,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libpng;..\..\zlib;..\..\7z;..\..\zopfli\src\zopfli</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -213,28 +213,28 @@
     <ClCompile Include="..\..\zlib\trees.c" />
     <ClCompile Include="..\..\zlib\uncompr.c" />
     <ClCompile Include="..\..\zlib\zutil.c" />
-    <ClCompile Include="..\..\zopfli\blocksplitter.c" />
-    <ClCompile Include="..\..\zopfli\cache.c">
+    <ClCompile Include="..\..\zopfli\src\zopfli\blocksplitter.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\cache.c">
       <DisableSpecificWarnings>4267</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="..\..\zopfli\deflate.c">
+    <ClCompile Include="..\..\zopfli\src\zopfli\deflate.c">
       <DisableSpecificWarnings>4267</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="..\..\zopfli\gzip_container.c" />
-    <ClCompile Include="..\..\zopfli\hash.c">
+    <ClCompile Include="..\..\zopfli\src\zopfli\gzip_container.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\hash.c">
       <DisableSpecificWarnings>4267</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="..\..\zopfli\katajainen.c" />
-    <ClCompile Include="..\..\zopfli\lz77.c">
+    <ClCompile Include="..\..\zopfli\src\zopfli\katajainen.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\lz77.c">
       <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="..\..\zopfli\squeeze.c">
+    <ClCompile Include="..\..\zopfli\src\zopfli\squeeze.c">
       <DisableSpecificWarnings>4244;4267;4305</DisableSpecificWarnings>
     </ClCompile>
-    <ClCompile Include="..\..\zopfli\tree.c" />
-    <ClCompile Include="..\..\zopfli\util.c" />
-    <ClCompile Include="..\..\zopfli\zlib_container.c" />
-    <ClCompile Include="..\..\zopfli\zopfli_lib.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\tree.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\util.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\zlib_container.c" />
+    <ClCompile Include="..\..\zopfli\src\zopfli\zopfli_lib.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\7z\7z.h" />
@@ -298,19 +298,19 @@
     <ClInclude Include="..\..\zlib\zconf.h" />
     <ClInclude Include="..\..\zlib\zlib.h" />
     <ClInclude Include="..\..\zlib\zutil.h" />
-    <ClInclude Include="..\..\zopfli\blocksplitter.h" />
-    <ClInclude Include="..\..\zopfli\cache.h" />
-    <ClInclude Include="..\..\zopfli\deflate.h" />
-    <ClInclude Include="..\..\zopfli\gzip_container.h" />
-    <ClInclude Include="..\..\zopfli\hash.h" />
-    <ClInclude Include="..\..\zopfli\katajainen.h" />
-    <ClInclude Include="..\..\zopfli\lz77.h" />
-    <ClInclude Include="..\..\zopfli\squeeze.h" />
-    <ClInclude Include="..\..\zopfli\symbols.h" />
-    <ClInclude Include="..\..\zopfli\tree.h" />
-    <ClInclude Include="..\..\zopfli\util.h" />
-    <ClInclude Include="..\..\zopfli\zlib_container.h" />
-    <ClInclude Include="..\..\zopfli\zopfli.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\blocksplitter.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\cache.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\deflate.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\gzip_container.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\hash.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\katajainen.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\lz77.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\squeeze.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\symbols.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\tree.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\util.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\zlib_container.h" />
+    <ClInclude Include="..\..\zopfli\src\zopfli\zopfli.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\apngasm_gui.rc" />
