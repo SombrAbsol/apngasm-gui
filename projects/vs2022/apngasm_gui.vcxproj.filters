@@ -135,42 +135,6 @@
     <ClCompile Include="..\..\7z\WindowOut.cc">
       <Filter>Source Files\7z</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\zopfli\blocksplitter.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\cache.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\deflate.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\gzip_container.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\hash.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\katajainen.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\lz77.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\squeeze.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\tree.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\util.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\zlib_container.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\zopfli\zopfli_lib.c">
-      <Filter>Source Files\zopfli</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\libpng\png.c">
       <Filter>Source Files\libpng</Filter>
     </ClCompile>
@@ -217,6 +181,42 @@
       <Filter>Source Files\libpng</Filter>
     </ClCompile>
     <ClCompile Include="..\..\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\blocksplitter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\gzip_container.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\katajainen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\lz77.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\squeeze.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\zlib_container.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zopfli\src\zopfli\zopfli_lib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -377,45 +377,6 @@
     <ClInclude Include="..\..\7z\WindowOut.h">
       <Filter>Source Files\7z</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\zopfli\blocksplitter.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\cache.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\deflate.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\gzip_container.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\hash.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\katajainen.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\lz77.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\squeeze.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\symbols.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\tree.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\util.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\zlib_container.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zopfli\zopfli.h">
-      <Filter>Source Files\zopfli</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\libpng\png.h">
       <Filter>Source Files\libpng</Filter>
     </ClInclude>
@@ -441,6 +402,45 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\blocksplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\gzip_container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\katajainen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\lz77.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\squeeze.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\symbols.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\zlib_container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zopfli\src\zopfli\zopfli.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
