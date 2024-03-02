@@ -42,9 +42,6 @@
     <ClCompile Include="..\..\zlib\crc32.c">
       <Filter>Source Files\zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\zlib\deflate1.c">
-      <Filter>Source Files\zlib</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\zlib\gzclose.c">
       <Filter>Source Files\zlib</Filter>
     </ClCompile>
@@ -219,15 +216,15 @@
     <ClCompile Include="..\..\zopfli\src\zopfli\zopfli_lib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\zlib\deflate1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\zlib\crc32.h">
-      <Filter>Source Files\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\zlib\deflate1.h">
       <Filter>Source Files\zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\zlib\gzguts.h">
@@ -441,6 +438,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\zopfli\src\zopfli\zopfli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zlib\deflate1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
